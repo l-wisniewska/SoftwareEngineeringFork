@@ -29,7 +29,7 @@ int main()
     do {
         cout << "Please enter a level (between 0 and 100)" << endl;
         cin >> level;
-    } while (level < 0);
+    } while ((level < 0) || (level > 100));
 
     if (level <= low)                       // check the level
     {
@@ -43,7 +43,9 @@ int main()
 
     if (level == high)                       // monitor the level
     {
-        cout << "Tank is full" << endl;
-    }
+        cout << "Tank is full" << endl;     //when 101 is entered it is still sufficient but the value to 
+    }                                       //print tank is full is only 100
 
 }
+ //when -10 is entered the question is repeated until a positive integer is entered
+
